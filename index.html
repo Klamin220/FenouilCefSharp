@@ -47,7 +47,7 @@
 
         <!-- The slideshow -->
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" id="item1">
                 <img src="1.jpg" alt="Los Angeles" width="960" height="335">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>PUBLICITE 1</h5>
@@ -69,6 +69,7 @@
                 </div>
             </div>
         </div>
+		<script>document.getElementById("item1").addEventListener("click", function() {callbackObj.setMessage("aaa");callbackObj.showMessage();});</script>
 
         <!-- Left and right controls -->
         <a class="carousel-control-prev" href="#demo" data-slide="prev">
