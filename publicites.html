@@ -104,9 +104,14 @@
     </style>
     <!-- Hover #1 -->
     <div class="box-1">
-        <div class="btn btn-one">
+        <div class="btn btn-one" id="item1">
             <span>AJOUTER...</span>
         </div>
     </div>
 </body>
+<script>
+            document.getElementById("item1").addEventListener("click", function() {
+                callBackObj.showPublicite(4,2);
+            });
+        </script>
 </html>
